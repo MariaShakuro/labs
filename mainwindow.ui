@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>866</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>КОНВЕРТАТОР: минуты =&gt; минуты</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="directionBox">
+        <property name="text">
+         <string>Сверху вниз</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="11" column="1">
+     <widget class="QTextEdit" name="input_2"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="typeBox_1">
+      <item>
+       <property name="text">
+        <string>минуты</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>секунды</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>градусы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>грады</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>тысячные</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>радианы</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="typeBox_2">
+      <item>
+       <property name="text">
+        <string>минуты</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>секунды</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>градусы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>грады</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>тысячные</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>радианы</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QTextEdit" name="input_1"/>
+    </item>
+    <item row="12" column="1">
+     <widget class="QPushButton" name="convertButton">
+      <property name="text">
+       <string>КОНВЕРТИРОВАТЬ</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>866</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="openAction"/>
+    <addaction name="saveHowAction"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="openAction">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="saveHowAction">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
