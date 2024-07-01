@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
     input = this->ui->input_1;
     type1 = this->ui->typeBox_1;
@@ -12,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     type2 = this->ui->typeBox_2;
     this->ui->directionBox->setCheckState(Qt::Checked);
     way = " => ";
+
 }
 
 MainWindow::~MainWindow()
@@ -184,5 +186,14 @@ void MainWindow::on_typeBox_1_currentTextChanged(const QString &arg1)
 void MainWindow::on_typeBox_2_currentTextChanged(const QString &arg1)
 {
     this->ui->label->setText("КОНВЕРТАТОР: " + this->ui->typeBox_1->currentText() + way + this->ui->typeBox_2->currentText());
+}
+
+
+
+
+void MainWindow::on_pushButton_clicked()
+{    dialog=new Dialog();
+    dialog->exec();
+    dialog->show();
 }
 
