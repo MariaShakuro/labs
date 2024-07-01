@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include"dialog.h"
 #include <QMainWindow>
 #include <QTextEdit>
 #include <QLabel>
@@ -39,6 +39,7 @@ private slots:
     void on_typeBox_1_currentTextChanged(const QString &arg1);
 
     void on_typeBox_2_currentTextChanged(const QString &arg1);
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -47,6 +48,6 @@ private:
     QComboBox* type1;
     QComboBox* type2;
     QString way;
-
+    QDialog*dialog;
 };
 #endif // MAINWINDOW_H
