@@ -12,7 +12,6 @@
 #include "widget.h"
 #include <iostream>
 #include <sstream>
-//#include <QTextWidget>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -28,16 +27,24 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_tableWidget_cellActivated(WidgetA&widgetA,QTableWidget*tableWidget);
-   // void on_openAction_triggered();
-   // void on_saveHowAction_triggered();
     void on_openAction_triggered();
-
     void on_saveHowAction_triggered();
+
+    void on_textEdit_3_textChanged();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
-
-   WidgetA widgetA;
+    QString current_file;
+    void ReadFile();
+    void binarySort();
+    quint8 current_num;
+    quint8 ammount_in_file;
+    void AmountInFile();
 };
 #endif // MAINWINDOW_H
