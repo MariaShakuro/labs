@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/mashina-1193x671px.jpg</file>
+        <file>img/mashina-1200x675px.jpg</file>
+        <file>img/mashina-1440x900px.jpg</file>
+    </qresource>
+</RCC>
