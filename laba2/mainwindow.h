@@ -3,12 +3,14 @@
 
 #include <QMainWindow>
 #include <QTextEdit>
+#include <QListView>
 #include <QLabel>
 #include <QComboBox>
 #include <QMessageBox>
 #include <QTableWidget>
 #include <QFileDialog>
 #include <QFile>
+#include <QStandardItemModel>
 #include "widget.h"
 #include <iostream>
 #include <sstream>
@@ -38,11 +40,16 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString current_file;
     void ReadFile();
-    void binarySort();
+    void ReadFile1();
+    void binaryInsertionSort();
     quint8 current_num;
     quint8 ammount_in_file;
     void AmountInFile();
